@@ -1,0 +1,74 @@
+@import "../../node_modules/antd/dist/antd.less";   // Import Ant Design styles by less entry
+
+@primary-color: #641934;
+@link-color: lighten(@primary-color, 8.1333%);
+
+// @success-color: #52c41a;                         // success state color
+// @warning-color: #faad14;                         // warning state color
+// @error-color: #f5222d;                           // error state color
+@font-size-base: 14px;                           // major text font size
+@font-family: 'Krub', sans-serif;
+@typography-title-font-weight: 500;
+// @heading-color: rgba(0, 0, 0, .85);              // heading text color
+// @text-color: rgba(0, 0, 0, .65);                 // major text color
+// @text-color-secondary : rgba(0, 0, 0, .45);      // secondary text color
+// @disabled-color : rgba(0, 0, 0, .25);            // disable state color
+@border-radius-base: 4px;                        // major border radius
+@card-radius: 8px;
+// @border-color-base: #d9d9d9;                     // major border color
+// @box-shadow-base: 0 2px 8px rgba(0, 0, 0, .15);  // major shadow for layers
+
+a:hover {
+  color: darken(@primary-color, 8.1333%);
+}
+.card-title {
+    color:@primary-color;
+}
+.ant-layout-sider-trigger { color:@primary-color; }
+
+.asset-info .ant-col label { color:@primary-color;  }
+.nav-divider.ant-divider {
+    color:@primary-color;
+}
+
+.text-primary {
+    color: @primary-color;
+}
+.hdf, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Krub', sans-serif;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+    font-family: 'Krub', sans-serif;
+}
+.card-title { color: @primary-color; }
+td span button, button.linkstyle { color: @primary-color; }
+td span button:hover, button.linkstyle:hover { color: @link-color; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: all 5000s ease-in-out 0s;
+}
+
+.ant-layout-sider, .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+    background-color:darken(@primary-color, 20%);  
+}
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background-color:darken(@primary-color, 22%);  
+}
+.ant-layout-sider-zero-width-trigger {
+    background-color:darken(@primary-color, 25%);  
+}
+.ant-alert-info {
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+}
+.ant-alert-info .ant-alert-icon, .ant-message-info .anticon, .ant-message-loading .anticon {
+    color: #1890ff;
+}
