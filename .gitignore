@@ -1,4 +1,7 @@
 node_modules/
 *-lock.json
 *.lock
+*.log
 .DS_Store
+
+build
