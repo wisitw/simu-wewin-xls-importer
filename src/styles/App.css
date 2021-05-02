@@ -127,6 +127,7 @@
     flex: 0 0 30%;
     max-width: 30%;
   }
+  .singlePage h3.ant-typography { display: none; }
   .singlePage .drg {
     flex: 0 0 70%;
     max-width: 70%;
