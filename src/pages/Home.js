@@ -118,9 +118,9 @@ const Page = () => {
   
   useEffect(() => { loadData(); }, [])
   useEffect(() => { readData(); }, [workingSheet])
-  useEffect(() => { dp({ type:"UPDATE_SETTING", data:{settings:settings}})}, [settings])
-  useEffect(() => { dp({ type:"UPDATE_SETTING", data:{renderFrom:renderFrom}})}, [renderFrom])
-  useEffect(() => { dp({ type:"UPDATE_SETTING", data:{renderTo:renderTo}})}, [renderTo])
+  useEffect(() => { updateRenderData([]); dp({ type:"UPDATE_SETTING", data:{settings:settings}})}, [settings])
+  useEffect(() => { updateRenderData([]); dp({ type:"UPDATE_SETTING", data:{renderFrom:renderFrom}})}, [renderFrom])
+  useEffect(() => { updateRenderData([]); dp({ type:"UPDATE_SETTING", data:{renderTo:renderTo}})}, [renderTo])
 
   const colsSelect = workingSheet !== undefined ? Array(sheet[workingSheet].cols) : [];
   
@@ -221,7 +221,7 @@ const Slip = (props) => {
     <Row gutter={[16,32]}>
       <Col span={24}>
         <Typography.Title level={4}>ข้อมูลการรับบริจาค #{item.id}</Typography.Title>
-        <Typography.Title level={3}>โครงการ SiMU WE WIN</Typography.Title>
+        <Typography.Title level={3}>โครงการพวงกุญแจที่ระลึก ศิริราชร่วมใจ สู้ภัยโควิด</Typography.Title>
       </Col>
     </Row>
     <Row className="drd" gutter={[16,16]}>
